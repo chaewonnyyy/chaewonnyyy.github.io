@@ -120,7 +120,7 @@ button{background: inherit; border: none; box-shadow: none; border-radius: 0;}
 .con_recomm .swiper-slide {text-align: center;}
 .con_recomm .swiper-button-prev {left: 145px; background-position: -290px -35px;}
 .con_recomm .swiper-button-next {right: 145px; background-position: -245px -35px;}
-.con_recomm .swiper-button-next, .con_recomm .swiper-button-prev {width: 41px; height: 41px; background-size: auto;}
+.con_recomm .swiper-button-next, .con_recomm .swiper-button-prev {width: 41px; height: 41px; background-size: auto; background-color: transparent;}
 .con_recomm .swiper-pagination {display: none;}
 
 /* Footer */
