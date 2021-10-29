@@ -213,7 +213,7 @@ button{background: inherit; border: none; box-shadow: none; border-radius: 0;}
     .con_new .con_tit {width: 30px; height: 10px; background-position: -32.5px -50px;}
     .con_new .txt_hashTag {font-size: 1rem;}    
     .con_new .swiper_wrap {text-align: center;}
-    .con_new .swiper-slide .img_area {height: auto;}
+    .con_new .swiper-slide .img_area {height: 36px;}
     .con_new .swiper-button-prev, .con_new .swiper-button-next {top: 44px;}
     .con_new .swiper-button-prev {background-position: -270px -50px;}
     .con_new .swiper-button-next {background-position: -300px -50px;}
