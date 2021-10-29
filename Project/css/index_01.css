@@ -195,7 +195,7 @@ button{background: inherit; border: none; box-shadow: none; border-radius: 0;}
     .con_best .box_half .con_list {margin: 0;}
     .con_best .txt_tit {padding: 8px 10px; font-size: 1rem;}
     .con_best .img_thumb {width: 50%;}
-    .con_best .img_best {width: 100%!important;}
+    .con_best .img_best {width: 100%!important; margin-top: 7px;}
     .con_best .img_best .txt_tit {padding: 18px 20px; font-size: 1.2rem; line-height: 17px;}
     .con_ranking {padding-right: 0;}
     .con_ranking .con_tit {width: 52px; height: 10px; background-position: -63px -50px;}
