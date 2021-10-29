@@ -26,7 +26,7 @@ button{background: inherit; border: none; box-shadow: none; border-radius: 0;}
 .doc_main::after {content:''; display: block; clear:both;}
 .sec_wrap {position: relative; overflow: hidden;}
 /* Main - sec_lnb */
-.sec_lnb {transition: all 0.15s; position: absolute;  left: -241px; top: 0;  display: block; height: 100%; background-color: #fff; border-right: 1px solid #ccc; z-index:1000000;}
+.sec_lnb {transition: all 0.15s; position: absolute;  left: 0; top: 0;  display: block; height: 100%; background-color: #fff; border-right: 1px solid #ccc; z-index:1000000;}
 .lnb_main {width: 240px; overflow: hidden; transition: all 0.15s;}
 .lnb_inner {margin: 46px 0 0 26px;}
 .lnb_tag {margin-top: 70px;}
@@ -40,13 +40,13 @@ button{background: inherit; border: none; box-shadow: none; border-radius: 0;}
 .item_list .item_issue a {width:100px; height: 15px; background-position: -150px -95px;}
 .item_list .item_subscribe a {width: 72px; height: 15px; background-position: -255px -95px;}
 .control_lnb {position: absolute; top: 10px; left: 240px; width: 30px; height: 300px; background-color: #ffcc56; border: 1px solid #f8bb4f; border-radius: 0 10px 10px 0;}
-.control_lnb .lnb_button {display: block; width: 30px; height: 30px; border: none; background-position: -228px 0; } 
-.sec_lnb.active .control_lnb .lnb_button {transform: rotate(180deg);}
+.control_lnb .lnb_button {display: block; transform: rotate(180deg); width: 30px; height: 30px; border: none; background-position: -228px 0; } 
+.sec_lnb.active .control_lnb .lnb_button {transform: rotate(0deg);}
 /* Main - sec_con */
-.sec_con {padding: 46px 40px 60px; transition: all 0.15s;}
+.sec_con {padding: 46px 40px 60px 280px; transition: all 0.15s;}
 .sec_con .doc_tit {display: block; width: 171px; height: 29px; margin-bottom: 22px;}
-.sec_lnb.active {left: 0;}
-.sec_lnb.active + .sec_con {padding: 46px 0 60px 280px;}
+.sec_lnb.active {left: -241px;}
+.sec_lnb.active + .sec_con {padding: 46px 40px 60px 60px;}
 .tab_menu {max-width: 943px; border: 1px solid #c6cbce; border-top: none;}
 .tab_menu .tab_list::after {content:''; display: block; clear:both;}
 .tab_menu .tab_list .btn_con {display: inline-block; width: 50%; float: left; padding: 15px 0; text-align: center; box-sizing: border-box; background: #f3f3f5; background-color: #f3f3f5; border-top: 2px solid #a6a8ab; border-bottom: 1px solid #a6a8ab;}
@@ -115,7 +115,7 @@ button{background: inherit; border: none; box-shadow: none; border-radius: 0;}
 .con_new .swiper_visitor .swiper-slide .txt_tit {display: inline-block; padding: 0 7px; vertical-align: middle; text-align: left;}
 .con_recomm {position: relative; margin-top: 78px;}
 .tab_story .con_recomm .con_list {background: none;}
-.con_recomm .swiper-slide .img_area {width: 592px;}
+.con_recomm .swiper-slide {text-align: center;}
 .con_recomm .swiper-button-prev {left: 150px; background-position: -290px -35px;}
 .con_recomm .swiper-button-next {right: 150px; background-position: -245px -35px;}
 .con_recomm .swiper-button-next, .con_recomm .swiper-button-prev {width: 41px; height: 41px; background-size: auto;}
@@ -134,6 +134,8 @@ button{background: inherit; border: none; box-shadow: none; border-radius: 0;}
     .con_board .txt_id {padding-top: 5px; font-size: 1.1rem;}
     .con_board .item_hashTag {bottom: 5px;}
     .con_board .con_list .txt_hashTag {margin: 3px 2px 0; padding: 0 5px; font-size: 1.1rem; line-height: 20px;}
+
+    .con_ranking .con_list li {padding: 30px 10px; font-size: 1rem;}
 }
 
 
@@ -152,9 +154,10 @@ button{background: inherit; border: none; box-shadow: none; border-radius: 0;}
 
     /* Main */
     .doc-main {padding: 20px 0 0 0;}
-    .bg_shadow {position: fixed; top: 0; left:0; width: 100%; height: 100%; opacity: 0.5; background-color: rgb(0, 0, 0); z-index: 10;}
+    .bg_shadow {position: fixed; display: none; top: 0; left:0; width: 100%; height: 100%; opacity: 0.5; background-color: rgb(0, 0, 0); z-index: 10;}
     /* Main - sec_lnb */
-    .sec_lnb {position: fixed; height: 100%; background-color: #fff; border-right: none;}
+    .sec_lnb {position: fixed; left: -241px;  height: 100%; background-color: #fff; border-right: none;}
+    .sec_lnb.active{left: 0;}
     .sec_lnb.active + .sec_con {padding: 20px 0 0;}
     .item_category {background-position: 0 -62.5px;}
     .item_tag {background-position: -97.5px -62.5px;}
@@ -197,7 +200,7 @@ button{background: inherit; border: none; box-shadow: none; border-radius: 0;}
     .con_best .img_best .txt_tit {padding: 18px 20px; font-size: 1.2rem; line-height: 17px;}
     .con_ranking {padding-right: 0;}
     .con_ranking .con_tit {width: 52px; height: 10px; background-position: -63px -50px;}
-    .con_ranking .con_list li {font-size: 0.9rem;}
+    .con_ranking .con_list li {padding: 8px 4px; font-size: 0.9rem;}
     .con_ranking .st05 {color: #ffcb54;}
     .con_ranking .ico_star {width: 63.5px; height: 11.5px;}
     .con_ranking .ico_star.st06 {background-position: -200px 0;}
@@ -214,13 +217,12 @@ button{background: inherit; border: none; box-shadow: none; border-radius: 0;}
     .con_new .swiper-button-next {background-position: -300px -50px;}
     .con_new .item_visitor {font-size: 1rem;}
     .con_new .item_visitor .swiper_wrap {padding: 8px 38px 0;}
-    .con_new .item_visitor .swiper-slide .txt_tit {padding-top: 8px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
+    .con_new .item_visitor .swiper-slide .txt_tit {display: block; padding: 8px 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
     .con_new .item_blog, .con_new .item_visitor {display: inline-block; width: 50%; margin: 0 0 0 -1px; box-sizing: border-box; vertical-align: top;}
     .con_new .item_blog .swiper_wrap {padding: 8px 10px 0;}
     .con_new .item_blog .swiper-slide .img_area {height: 80px;}
     .con_new .item_blog .swiper-button-prev {left: 0;}
     .con_new .item_blog .swiper-button-next {right: 0;}
-    .con_recomm .swiper-slide .img_area {width: 100%;}
     .con_recomm {margin-top: 20px;}
     .con_recomm .util_wrap {position: relative; margin-top: 20px;}
     .con_recomm .swiper-button-next, .con_recomm .swiper-button-prev {top: 20px; width: 20.5px; height: 20.5px;}

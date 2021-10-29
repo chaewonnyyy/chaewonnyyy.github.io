@@ -51,7 +51,7 @@ $(document).ready(function() {
     spaceBetween: 6,
     loop : true,
     breakpoints: {
-      767: {
+      1025: {
         slidesPerView: 1,
         spaceBetween : 0, 
       }
@@ -67,7 +67,7 @@ $(document).ready(function() {
     spaceBetween : 25, 
     loop : true,
     breakpoints: {
-      767: {
+      1025: {
         slidesPerView: 1,
         spaceBetween : 0, 
       }
@@ -87,7 +87,7 @@ $(document).ready(function() {
     loop : true,
 
     breakpoints: {
-      767: {
+      1024: {
         slidesPerView: 1,
         spaceBetween : 0, 
       }
