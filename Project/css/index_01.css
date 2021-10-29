@@ -39,7 +39,7 @@ button{background: inherit; border: none; box-shadow: none; border-radius: 0;}
 .item_list .item_trip a {width: 59px; height: 15px; background-position: -90px -95px;}
 .item_list .item_issue a {width:100px; height: 15px; background-position: -150px -95px;}
 .item_list .item_subscribe a {width: 72px; height: 15px; background-position: -255px -95px;}
-.control_lnb {position: absolute; top: 10px; left: 240px; width: 30px; height: 300px; background-color: #ffcc56; border: 1px solid #f8bb4f; border-radius: 0 10px 10px 0;}
+.control_lnb {position: absolute; top: 10px; left: 240px; width: 30px; height: 300px; background-color: #ffcc56; border: 1px solid #f8bb4f; border-radius: 0 10px 10px 0; cursor: pointer;}
 .control_lnb .lnb_button {display: block; transform: rotate(180deg); width: 30px; height: 30px; border: none; background-position: -228px 0; } 
 .sec_lnb.active .control_lnb .lnb_button {transform: rotate(0deg);}
 /* Main - sec_con */
