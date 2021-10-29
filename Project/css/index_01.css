@@ -63,7 +63,7 @@ button{background: inherit; border: none; box-shadow: none; border-radius: 0;}
 .tab_menu .tab_story {padding: 20px 16px 40px;}
 .tab_menu .tab_story > .box_wrap {margin-top: 60px;}
 .tab_menu .tab_story .con_list {margin-top: 15px; background-color: #fff;}
-.tab_menu .tab_story .con_best {background: none;}
+.tab_menu .tab_story .con_best .con_list {background: none;}
 .con_board {margin: 15px 17px;}
 .con_board .con_list li {position: relative; margin-top:10px; border-right: 2px solid #efeef2; border-bottom: 2px solid #efeef2; background-color: #fff;}
 .con_board .img_thumb {position: absolute; top: 0; left: 0; display: inline-block; width:240px; vertical-align: middle;}
