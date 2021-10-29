@@ -1,3 +1,5 @@
+/* 채원꺼 */
+
 * {margin: 0; padding: 0;}
 html, body {width: 100%; font-size: 10px;}
 body, div, ul, li{margin: 0; padding: 0; letter-spacing: -1.5px; }
@@ -44,12 +46,12 @@ button{background: inherit; border: none; box-shadow: none; border-radius: 0;}
 .item_list .item_subscribe a {width: 72px; height: 15px; background-position: -255px -95px;}
 .control_lnb {position: absolute; top: 10px; left: 240px; width: 30px; height: 300px; background-color: #ffcc56; border: 1px solid #f8bb4f; border-radius: 0 10px 10px 0; cursor: pointer;}
 .control_lnb .lnb_button {display: block; transform: rotate(180deg); width: 30px; height: 30px; border: none; background-position: -228px 0; } 
-.sec_lnb.active .control_lnb .lnb_button {transform: rotate(0deg);}
+.sec_lnb.on .control_lnb .lnb_button {transform: rotate(0deg);}
 /* Main - sec_con */
 .sec_con {padding: 46px 40px 60px 280px; transition: all 0.15s;}
 .sec_con .doc_tit {display: block; width: 171px; height: 29px; margin-bottom: 22px;}
-.sec_lnb.active {left: -241px;}
-.sec_lnb.active + .sec_con {padding: 46px 40px 60px 60px;}
+.sec_lnb.on {left: -241px;}
+.sec_lnb.on + .sec_con {padding: 46px 40px 60px 60px;}
 .tab_menu {max-width: 943px; border: 1px solid #c6cbce; border-top: none;}
 .tab_menu .tab_list::after {content:''; display: block; clear:both;}
 .tab_menu .tab_list .btn_con {display: inline-block; width: 50%; float: left; padding: 15px 0; text-align: center; box-sizing: border-box; background: #f3f3f5; background-color: #f3f3f5; border-top: 2px solid #a6a8ab; border-bottom: 1px solid #a6a8ab;}
@@ -80,7 +82,8 @@ button{background: inherit; border: none; box-shadow: none; border-radius: 0;}
 .con_best .con_tit {display: block; width: 53px; height: 18px; background-position: 0 -115px; }
 .con_best .con_list::after {content:''; display: block; clear:both;}
 .con_best::after {content:''; display: block; clear:both;}
-.con_best .img_thumb {position: relative; float: left; width: 50%; box-sizing: border-box;} 
+.con_best .img_thumb {position: relative; float: left; width: 50%; padding: 0.5px; box-sizing: border-box;} 
+.con_best .img_thumb a {position: relative;} 
 .con_best .img_thumb img {vertical-align: middle;} 
 .con_best .img_best {width: 100%;}
 .con_best .img_best .txt_tit {padding: 30px 15px; line-height: 28px; font-size: 2rem;}
@@ -221,7 +224,7 @@ button{background: inherit; border: none; box-shadow: none; border-radius: 0;}
     .con_new .item_visitor {font-size: 1rem;}
     .con_new .item_visitor .swiper_wrap {padding: 8px 36px 0;}
     .con_new .item_visitor .swiper-slide .txt_tit {display: block; padding: 8px 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; text-align: center;}
-    .con_new .item_blog, .con_new .item_visitor {display: inline-block; float: left; width: 50%; margin: 0 0 0 -1px; box-sizing: border-box; vertical-align: top;}
+    .con_new .item_blog, .con_new .item_visitor {float: left; width: 50%; margin: 0 0 0 -1px; box-sizing: border-box; vertical-align: top;}
     .con_new .item_blog .swiper_wrap {padding: 8px 10px 0;}
     .con_new .item_blog .swiper-slide .img_area {height: 80px;}
     .con_new .item_blog .swiper-button-prev {left: 0;}
