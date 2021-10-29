@@ -218,7 +218,7 @@ button{background: inherit; border: none; box-shadow: none; border-radius: 0;}
     .con_new .swiper-button-prev {background-position: -270px -50px;}
     .con_new .swiper-button-next {background-position: -300px -50px;}
     .con_new .item_visitor {font-size: 1rem;}
-    .con_new .item_visitor .swiper_wrap {padding: 8px 38px 0;}
+    .con_new .item_visitor .swiper_wrap {padding: 8px 36px 0;}
     .con_new .item_visitor .swiper-slide .txt_tit {display: block; padding: 8px 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
     .con_new .item_blog, .con_new .item_visitor {display: inline-block; width: 50%; margin: 0 0 0 -1px; box-sizing: border-box; vertical-align: top;}
     .con_new .item_blog .swiper_wrap {padding: 8px 10px 0;}
