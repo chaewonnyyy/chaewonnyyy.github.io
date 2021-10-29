@@ -10,7 +10,7 @@ button{background: inherit; border: none; box-shadow: none; border-radius: 0;}
 /* 공통 */
 .screen_out {overflow: hidden; position: absolute; width: 0; height: 0; line-height: 0; text-indent: -9999px;}
 .img_area {display: inline-block;}
-.box_wrap::after{content: ''; display: block; clear: both;}
+.box_wrap::after {content: ''; display: block; clear: both;}
 .box_half{float: left; width: 50%; margin: 0; padding: 0; box-sizing: border-box;}
 .container_wrap {max-width: 1280px; margin: 0 auto; border-left: 1px solid #cdcdcd; border-right: 1px solid #cdcdcd;}
 .ico_comm {overflow: hidden; display: inline-block; line-height: 0;vertical-align: top; font-size: 0; text-indent: -9999px; background-image: url(../images/ico_comm.png)!important; background-repeat: no-repeat;}
@@ -135,8 +135,8 @@ button{background: inherit; border: none; box-shadow: none; border-radius: 0;}
     .con_board .txt_id {padding-top: 5px; font-size: 1.1rem;}
     .con_board .item_hashTag {bottom: 5px;}
     .con_board .con_list .txt_hashTag {margin: 3px 2px 0; padding: 0 5px; font-size: 1.1rem; line-height: 20px;}
-
     .con_ranking .con_list li {padding: 30px 10px; font-size: 1rem;}
+    .con_new .swiper_visitor .swiper-slide .txt_tit {text-align: left;}
 }
 
 
@@ -155,7 +155,7 @@ button{background: inherit; border: none; box-shadow: none; border-radius: 0;}
 
     /* Main */
     .doc-main {padding: 20px 0 0 0;}
-    .bg_shadow {position: fixed; display: none; top: 0; left:0; width: 100%; height: 100%; opacity: 0.5; background-color: rgb(0, 0, 0); z-index: 10;}
+    .bg_shadow {position: fixed; display: none; top: 0; left:0; width: 100%; height: 100%; opacity: 0.5; background-color: rgb(0, 0, 0); z-index: 1000;}
     /* Main - sec_lnb */
     .sec_lnb {position: fixed; left: -241px;  height: 100%; background-color: #fff; border-right: none;}
     .sec_lnb.active{left: 0;}
@@ -211,6 +211,7 @@ button{background: inherit; border: none; box-shadow: none; border-radius: 0;}
     .con_ranking .ico_star.st10 {background-position: -200px -50px;}
     .con_new {padding-left: 0;}
     .con_new .con_tit {width: 30px; height: 10px; background-position: -32.5px -50px;}
+    .con_new .con_list::after {content: ''; display: block; clear: both;}
     .con_new .txt_hashTag {font-size: 1rem;}    
     .con_new .swiper_wrap {text-align: center;}
     .con_new .swiper-slide .img_area {height: 36px;}
@@ -219,8 +220,8 @@ button{background: inherit; border: none; box-shadow: none; border-radius: 0;}
     .con_new .swiper-button-next {background-position: -300px -50px;}
     .con_new .item_visitor {font-size: 1rem;}
     .con_new .item_visitor .swiper_wrap {padding: 8px 36px 0;}
-    .con_new .item_visitor .swiper-slide .txt_tit {display: block; padding: 8px 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
-    .con_new .item_blog, .con_new .item_visitor {display: inline-block; width: 50%; margin: 0 0 0 -1px; box-sizing: border-box; vertical-align: top;}
+    .con_new .item_visitor .swiper-slide .txt_tit {display: block; padding: 8px 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; text-align: center;}
+    .con_new .item_blog, .con_new .item_visitor {display: inline-block; float: left; width: 50%; margin: 0 0 0 -1px; box-sizing: border-box; vertical-align: top;}
     .con_new .item_blog .swiper_wrap {padding: 8px 10px 0;}
     .con_new .item_blog .swiper-slide .img_area {height: 80px;}
     .con_new .item_blog .swiper-button-prev {left: 0;}
