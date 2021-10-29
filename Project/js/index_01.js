@@ -18,28 +18,28 @@ $(document).ready(function() {
       }
     }
   });
-  //  window resize Lnb 대응
+  // window resize Lnb 대응
   $(window).resize(function(){
     var winWidth = window.innerWidth;
     var isClass = $(".sec_lnb").hasClass('active');
     
-    if(winWidth < 768 && isClass) {//mobile
+    if(winWidth < 768 && isClass) { // mobile
       $("body").css("overflow", "hidden");
-    }else if(winWidth >= 768){//pc
+    }else if(winWidth >= 768){ // pc
       $("body").css("overflow", "");
     }
   })
 
   var gnbBtn = $(".gnb_button");
   
-  $(gnbBtn).click(function(){ // 모바일 버튼 클릭
+  $(gnbBtn).click(function(){ // mobile 버튼 클릭
     $(".sec_lnb").addClass('active');
     $(".bg_shadow").css("display", "block");
     $("body").css("overflow", "hidden");
   });
 
 
-  // 탭
+  // tab
   $("ul.tab_list li").click(function() {
     $("ul.tab_list li").removeClass("active"); 
     $(this).addClass("active"); 
@@ -54,7 +54,7 @@ $(document).ready(function() {
   });
 
   
-  // Swiper
+  // swiper
   var blogSwipe = new Swiper('.swiper-container.swiper_blog', {
     navigation: {
       nextEl: '.item_blog .swiper-button-next',
@@ -64,7 +64,7 @@ $(document).ready(function() {
     spaceBetween: 6,
     loop : true,
     breakpoints: {
-      767: {
+      768: {
         slidesPerView: 1,
         spaceBetween : 0, 
       }
@@ -80,7 +80,7 @@ $(document).ready(function() {
     spaceBetween : 25, 
     loop : true,
     breakpoints: {
-      767: {
+      768: {
         slidesPerView: 1,
         spaceBetween : 0, 
       }
@@ -100,7 +100,7 @@ $(document).ready(function() {
     loop : true,
 
     breakpoints: {
-      767: {
+      768: {
         slidesPerView: 1,
         spaceBetween : 0, 
       }
