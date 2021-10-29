@@ -15,7 +15,7 @@ button{background: inherit; border: none; box-shadow: none; border-radius: 0;}
 .box_half {float: left; width: 50%; box-sizing: border-box;}
 .container_wrap {max-width: 1280px; margin: 0 auto; border-left: 1px solid #cdcdcd; border-right: 1px solid #cdcdcd;}
 .ico_comm {background-image: url(../images/ico_comm.png)!important; background-repeat: no-repeat; font-size: 0; text-indent: -9999px; }
-.ico_new::after, .ico_hot::after {display:inline-block; content: ''; background-image: url(../images/ico_comm.png)!important; width: 16px; height: 16px; margin-left:5px;}
+.ico_new::after, .ico_hot::after {display:inline-block; content: ''; background-image: url(../images/ico_comm.png)!important; width: 16px; height: 16px; margin-left:5px; vertical-align: middle;}
 .ico_new::after {background-position: -310px 0px;}
 .ico_hot::after {background-position: -290px 0px;}
 .txt_tit {display: block; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
@@ -185,7 +185,7 @@ button{background: inherit; border: none; box-shadow: none; border-radius: 0;}
     .con_board .con_list li {border-right: none;}
     .con_board .img_thumb {display: none;}
     .con_board .txt_info {min-height: auto; padding: 0 15px 20px;}
-    .con_board .txt_tit {padding-top: 20px; font-size: 1.6rem; line-height: 21px; white-space: normal;}
+    .con_board .txt_tit {padding-top: 20px; font-size: 1.6rem; line-height: 16px; white-space: normal;}
     .con_board .txt_id {padding-top: 7px;}
     .con_board .item_hashTag {position: static; bottom: 0; margin: 20px 0 0;}
     .con_board .con_list .txt_hashTag {margin: 4px 2.5px 0; padding: 0; line-height: 14px; background-color: #fff; color: #808080;  border: none; font-weight: 400;}
