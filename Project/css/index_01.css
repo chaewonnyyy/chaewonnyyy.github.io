@@ -212,7 +212,8 @@ button{background: inherit; border: none; box-shadow: none; border-radius: 0;}
     .con_new .con_list::after {content: ''; display: block; clear: both;}
     .con_new .txt_hashTag {font-size: 1rem;}    
     .con_new .swiper_wrap {text-align: center;}
-    .con_new .swiper-slide .img_area {height: 36px;}
+    .con_new .swiper-slide .img_area {height: 47px;}
+    .con_new .swiper-slide .img_area img {width: auto;}
     .con_new .swiper-button-prev, .con_new .swiper-button-next {top: 44px;}
     .con_new .swiper-button-prev {background-position: -270px -50px;}
     .con_new .swiper-button-next {background-position: -300px -50px;}
