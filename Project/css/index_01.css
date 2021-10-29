@@ -110,7 +110,7 @@ button{background: inherit; border: none; box-shadow: none; border-radius: 0;}
 .con_new .swiper-button-next {background-position: -200px 0;}
 .con_new .swiper_blog .swiper-slide .img_area img {height: 100%; width: auto;}
 .con_new .swiper_visitor .swiper-slide::after {content: ''; display: block; clear: both;}
-.con_new .swiper_visitor .swiper-slide .img_area img {height: 100%;}
+.con_new .swiper_visitor .swiper-slide .img_area img {width: auto; height: 100%;}
 .con_new .swiper_visitor .swiper-slide .txt_tit {display: inline-block; padding: 0 7px; vertical-align: middle; text-align: left;}
 .con_recomm {position: relative; margin-top: 78px;}
 .tab_story .con_recomm .con_list {background: none;}
@@ -213,7 +213,6 @@ button{background: inherit; border: none; box-shadow: none; border-radius: 0;}
     .con_new .txt_hashTag {font-size: 1rem;}    
     .con_new .swiper_wrap {text-align: center;}
     .con_new .swiper-slide .img_area {height: 47px;}
-    .con_new .swiper-slide .img_area img {width: auto;}
     .con_new .swiper-button-prev, .con_new .swiper-button-next {top: 44px;}
     .con_new .swiper-button-prev {background-position: -270px -50px;}
     .con_new .swiper-button-next {background-position: -300px -50px;}
