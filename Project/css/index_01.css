@@ -75,11 +75,10 @@ button{background: inherit; border: none; box-shadow: none; border-radius: 0;}
 .con_board .con_list .st02 {background-color: #9da3d7;}
 .con_board .con_list .st03 {background-color: #ccc76c;}
 .con_board .con_list .st04 {background-color: #a37a7b;}
-.con_best .con_tit {background-position: 0 -115px; width: 53px; height: 18px;}
+.con_best .con_tit {display: block; width: 53px; height: 18px; background-position: 0 -115px; }
 .con_best .con_list::after {content:''; display: block; clear:both;}
 .con_best::after {content:''; display: block; clear:both;}
 .con_best .img_thumb {position: relative; float: left; width: 50%; box-sizing: border-box;} 
-/* .con_best .img_thumb::after {content: ''; display: block; clear: both;} */
 .con_best .img_thumb img {vertical-align: middle;} 
 .con_best .img_best {width: 100%;}
 .con_best .img_best .txt_tit {padding: 30px 15px; line-height: 28px; font-size: 2rem;}
@@ -90,8 +89,12 @@ button{background: inherit; border: none; box-shadow: none; border-radius: 0;}
 .con_ranking .con_list li {padding: 10px; text-align: left; font-weight: 600; font-size:1.2rem; border-bottom: 1px solid #eee;}
 .con_ranking .con_list a {display: inline-block;}
 .con_ranking .txt_tit {display: inline-block; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
-.con_ranking .ico_star {display: inline-block; float: right;}
-.con_ranking .ico_star .img_area {width: 11px; height: 11px;}
+.con_ranking .ico_star {float: right; width: 80px; height: 13px;}
+.con_ranking .ico_star.st06 {background-position: -245px -115px;}
+.con_ranking .ico_star.st07 {background-position: -245px -130px;}
+.con_ranking .ico_star.st08 {background-position: -245px -145px;}
+.con_ranking .ico_star.st09 {background-position: -245px -160px;}
+.con_ranking .ico_star.st10 {background-position: -245px -175px;}
 .con_new {padding-left: 5px;}
 .con_new .con_tit {background-position: -160px -115px; width: 50px; height: 20px}
 .con_new .con_list {margin-left: 5px; padding: 12px 11px;}
@@ -121,6 +124,8 @@ button{background: inherit; border: none; box-shadow: none; border-radius: 0;}
 .doc_footer {padding: 18px 0; text-align:center; letter-spacing: 0; font-size: 1.3rem; color:#777; background-color: #f1f1f1;}
 
 
+
+
 @media (max-width: 1023px) {
     .con_board .img_thumb {width: 180px;}
     .con_board .txt_info {min-height: 132px; padding-left: 190px;}
@@ -146,7 +151,7 @@ button{background: inherit; border: none; box-shadow: none; border-radius: 0;}
 
     /* Main */
     .doc-main {padding: 20px 0 0 0;}
-    .bg_shadow {position: fixed; top: 0; left:0; width: 100%; height: 100%; opacity: 0.5; background-color: rgb(0, 0, 0); z-index: 1;}
+    .bg_shadow {position: fixed; top: 0; left:0; width: 100%; height: 100%; opacity: 0.5; background-color: rgb(0, 0, 0); z-index: 10;}
     /* Main - sec_lnb */
     .sec_lnb {position: fixed; height: 100%; background-color: #fff; border-right: none;}
     .sec_lnb.active + .sec_con {padding: 20px 0 0;}
@@ -168,7 +173,7 @@ button{background: inherit; border: none; box-shadow: none; border-radius: 0;}
     .tab_menu .tabCon {padding-right: 0;}
     .tab_menu .tab_list .btn_con a {width: 63.5px; height:13px;}
     .tab_menu .tab_story > .box_wrap {display: flex; flex-direction: column-reverse; margin-top: 0px;}
-    .tab_menu .tab_story .con_list {margin-top: 7px;}
+    .tab_menu .tab_story .con_list {margin: 7px 0 0;}
     .tab_menu .tab_02 {background-position: -64.5px -35px;}
     .tab_menu .con_list {margin-top: 7px;}
     .con_board {margin: 0;}
@@ -193,6 +198,12 @@ button{background: inherit; border: none; box-shadow: none; border-radius: 0;}
     .con_ranking .con_tit {width: 52px; height: 10px; background-position: -63px -50px;}
     .con_ranking .con_list li {font-size: 0.9rem;}
     .con_ranking .st05 {color: #ffcb54;}
+    .con_ranking .ico_star {width: 63.5px; height: 11.5px;}
+    .con_ranking .ico_star.st06 {background-position: -200px 0;}
+    .con_ranking .ico_star.st07 {background-position: -200px -12.5px;}
+    .con_ranking .ico_star.st08 {background-position: -200px -25px;}
+    .con_ranking .ico_star.st09 {background-position: -200px -37.5px;}
+    .con_ranking .ico_star.st10 {background-position: -200px -50px;}
     .con_new {padding-left: 0;}
     .con_new .con_tit {width: 30px; height: 10px; background-position: -32.5px -50px;}
     .con_new .txt_hashTag {font-size: 1rem;}    
@@ -220,7 +231,4 @@ button{background: inherit; border: none; box-shadow: none; border-radius: 0;}
 
     /* Footer */
     .doc_footer {padding: 14px 0; font-size: 1.1rem;}
-
-
-    .con_new .con_list {margin-left: 0;}
 }
