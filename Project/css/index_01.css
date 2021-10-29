@@ -9,11 +9,14 @@ button{background: inherit; border: none; box-shadow: none; border-radius: 0;}
 
 /* 공통 */
 .screen_out {overflow: hidden; position: absolute; width: 0; height: 0; line-height: 0; text-indent: -9999px;}
-.ico_comm {overflow: hidden; display: inline-block; line-height: 0;vertical-align: top; font-size: 0; text-indent: -9999px; background-image: url(../images/ico_comm.png)!important; background-repeat: no-repeat;}
 .img_area {display: inline-block;}
 .box_wrap::after{content: ''; display: block; clear: both;}
 .box_half{float: left; width: 50%; margin: 0; padding: 0; box-sizing: border-box;}
 .container_wrap {max-width: 1280px; margin: 0 auto; border-left: 1px solid #cdcdcd; border-right: 1px solid #cdcdcd;}
+.ico_comm {overflow: hidden; display: inline-block; line-height: 0;vertical-align: top; font-size: 0; text-indent: -9999px; background-image: url(../images/ico_comm.png)!important; background-repeat: no-repeat;}
+.ico_new::after, .ico_hot::after {display:inline-block; content: ''; background-image: url(../images/ico_comm.png)!important; width: 16px; height: 16px; margin-left:5px;}
+.ico_new::after {background-position: -310px 0px; }
+.ico_hot::after {background-position: -290px 0px;}
 
 /* Header */
 .doc_header {border-bottom: 1px solid #cdcdcd;}
@@ -66,8 +69,6 @@ button{background: inherit; border: none; box-shadow: none; border-radius: 0;}
 .con_board .img_thumb img {vertical-align: middle;}
 .con_board .txt_info {position: relative; min-height: 175px; padding-left: 278px;}
 .con_board .txt_tit {padding-top: 30px; overflow: hidden; line-height: 28px; text-overflow: ellipsis;  white-space: nowrap; font-weight: 600; font-size: 2rem;}
-.con_board .txt_tit.ico_new::after {display:inline-block; content: ''; background-position: -310px 0px; background-image: url(../images/ico_comm.png)!important; width: 16px; height: 16px; margin-left:5px;}
-.con_board .txt_tit.ico_hot::after {display:inline-block; content: ''; background-position: -290px 0px; background-image: url(../images/ico_comm.png)!important; width: 16px; height: 16px; margin-left:5px;}
 .con_board .txt_id {display: block; padding-top: 10px; font-size: 1.3rem; color: #b3b6bb;} 
 .con_board .item_hashTag {position: absolute; bottom: 15px; margin: 0 -2.5px; color: #808080;}
 .con_board .item_hashTag::after{content: ''; display: block; clear: both;}
@@ -200,8 +201,8 @@ button{background: inherit; border: none; box-shadow: none; border-radius: 0;}
     .con_best .img_best .txt_tit {padding: 18px 20px; font-size: 1.2rem; line-height: 17px;}
     .con_ranking {padding-right: 0;}
     .con_ranking .con_tit {width: 52px; height: 10px; background-position: -63px -50px;}
-    .con_ranking .con_list li {padding: 8px 4px; font-size: 0.9rem;}
-    .con_ranking .st05 {color: #ffcb54;}
+    .con_ranking .con_list li {padding: 8px 4px;}
+    .con_ranking .st05 {margin-right: 5px; color: #ffcb54;}
     .con_ranking .ico_star {width: 63.5px; height: 11.5px;}
     .con_ranking .ico_star.st06 {background-position: -200px 0;}
     .con_ranking .ico_star.st07 {background-position: -200px -12.5px;}
