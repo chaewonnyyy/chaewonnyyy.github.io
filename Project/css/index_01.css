@@ -13,6 +13,7 @@ button{background: inherit; border: none; box-shadow: none; border-radius: 0;}
 .img_area {display: inline-block;}
 .box_wrap::after{content: ''; display: block; clear: both;}
 .box_half{float: left; width: 50%; margin: 0; padding: 0; box-sizing: border-box;}
+.container_wrap { max-width: 1280px; margin: 0 auto;}
 
 /* Header */
 .doc_header {border-bottom: 1px solid #cdcdcd;}
@@ -23,7 +24,7 @@ button{background: inherit; border: none; box-shadow: none; border-radius: 0;}
 /* Main */
 .doc_main {background-color: #f9f9f9; position: relative;}
 .doc_main::after {content:''; display: block; clear:both;}
-.sec_wrap {position: relative; max-width: 1280px; margin: 0 auto;}
+.sec_wrap {position: relative;}
 /* Main - sec_lnb */
 .sec_lnb {transition: all 0.15s; position: absolute;  left: -240px; top: 0;  display: block; height: 100%; background-color: #fff; border-right: 1px solid #ccc; z-index:1000000;}
 .lnb_main {width: 240px; overflow: hidden; transition: all 0.15s;}
@@ -162,7 +163,7 @@ button{background: inherit; border: none; box-shadow: none; border-radius: 0;}
     .item_list .item_trip a {background-position: -85px -95px;}
     .item_list .item_issue a {background-position: -145px -95px;}
     .item_list .item_subscribe a {background-position: -245px -95px;}
-    .control_lnb {display: none; width: 30px; height: 30px; background-position: -230px 0; background-color: transparent; border: none;}
+    .control_lnb {display: none; width: 30px; height: 30px; background-position: -230px 0; background-color: transparent; border: none; border-radius: 0;}
     .control_lnb .lnb_button  {background-position: -300px -62.5px;}
     .sec_lnb.active .control_lnb {display: block; width: auto; height: auto; top: 15px; left: 256px; transform: none;}
     .sec_lnb.active .control_lnb .lnb_button {width: 20px; height: 20px; transform: none;}
@@ -183,7 +184,7 @@ button{background: inherit; border: none; box-shadow: none; border-radius: 0;}
     .con_board .txt_info {min-height: auto; padding: 0 0 20px 15px;}
     .con_board .txt_tit {padding-top: 20px; font-size: 1.6rem; line-height: 21px; white-space: normal;}
     .con_board .txt_id {padding-top: 7px;}
-    .con_board .item_hashTag {position: static; bottom: 0; margin-top: 20px;}
+    .con_board .item_hashTag {position: static; bottom: 0; margin: 20px 0 0;}
     .con_board .con_list .txt_hashTag {margin: 4px 2.5px 0; padding: 0; line-height: 14px; background-color: #fff; color: #808080;  border: none; font-weight: 400;}
     .con_board .txt_hashTag.st01 {color: #86bbb2;}
     .con_board .txt_hashTag.st02 {color: #9da3d7;}
