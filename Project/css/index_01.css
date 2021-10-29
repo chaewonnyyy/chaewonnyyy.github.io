@@ -24,7 +24,7 @@ button{background: inherit; border: none; box-shadow: none; border-radius: 0;}
 /* Main */
 .doc_main {background-color: #f9f9f9; position: relative;}
 .doc_main::after {content:''; display: block; clear:both;}
-.sec_wrap {position: relative;}
+.sec_wrap {position: relative; overflow: hidden;}
 /* Main - sec_lnb */
 .sec_lnb {transition: all 0.15s; position: absolute;  left: -241px; top: 0;  display: block; height: 100%; background-color: #fff; border-right: 1px solid #ccc; z-index:1000000;}
 .lnb_main {width: 240px; overflow: hidden; transition: all 0.15s;}
