@@ -54,7 +54,7 @@ button{background: inherit; border: none; box-shadow: none; border-radius: 0;}
 .tab_menu .tab_list::after {content:''; display: block; clear:both;}
 .tab_menu .tab_list .btn_con {width: 50%; float: left; padding: 15px 0; text-align: center; box-sizing: border-box; background: #f3f3f5; background-color: #f3f3f5; border-top: 2px solid #a6a8ab; border-bottom: 1px solid #a6a8ab;}
 .tab_menu .tab_list .btn_con.active {background-color: #fbfbfb; border-top:2px solid #585a5b; border-bottom: none;}
-.tab_menu .tab_list .btn_con:first-child {border-right: 1px solid #c6cbcd;}
+.tab_menu .tab_list .btn_con:first-child {border-right: 1px solid #58595b;}
 .tab_menu .tab_list .btn_con a {display: block; margin: 0 auto; width: 73px; height: 15px;}
 .tab_menu .tab_01 {background-position: 0 -35px;}
 .tab_menu .tab_02 {background-position: -80px -35px;}
