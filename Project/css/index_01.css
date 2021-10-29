@@ -108,7 +108,7 @@ button{background: inherit; border: none; box-shadow: none; border-radius: 0;}
 .con_new .item_visitor {margin-top: 27px; font-weight: 600; font-size: 1.2rem;}
 .con_new .swiper_wrap {position: relative; padding: 8px 30px 0; text-align: center;}
 .con_new .swiper-slide .img_area {height: 48px; vertical-align: middle;}
-.con_new .swiper-button-prev, .con_new .swiper-button-next {top: 26px; width: 8px; height: 11px; margin-top: 0; background-size: auto; background-color: transparent;}
+.con_new .swiper-button-prev, .con_new .swiper-button-next {top: 26px; width: 8px; height: 11px; margin-top: 0; background-size: auto;}
 .con_new .swiper-button-prev {background-position: -200px -20px;}
 .con_new .swiper-button-next {background-position: -200px 0;}
 .con_new .swiper_blog .swiper-slide .img_area img {height: 100%; width: auto;}
