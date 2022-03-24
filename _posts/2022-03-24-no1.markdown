@@ -1,0 +1,14 @@
+---
+layout: post
+title: no1. post
+date: 2022-03-24 
+category: chaewon
+---
+
+# 첫 포스트
+> Hello!
+
+This is code
+```ruby
+print 'hello world'
+```
